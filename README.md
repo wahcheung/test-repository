@@ -31,3 +31,9 @@ $ git config user.email huachang.gong@outlook.com
 ```sh
 $ git checkout -b test-branch
 ```
+
+### 删除分支
+
+```sh
+$ git branch -d test-branch
+```
