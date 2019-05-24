@@ -23,3 +23,11 @@ $ git config --global user.email huachang.gong@outlook.com
 $ git config user.name huachang.gong
 $ git config user.email huachang.gong@outlook.com
 ```
+
+## git branch
+
+### 新建分支并切换到新分支
+
+```sh
+$ git checkout -b test-branch
+```
