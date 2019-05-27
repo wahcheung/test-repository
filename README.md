@@ -37,3 +37,17 @@ $ git checkout -b test-branch
 ```sh
 $ git branch -d test-branch
 ```
+
+## git fetch
+
+### 拉取远程分支并创建本地分支
+
+```sh
+$ git fetch origin remote-branch:new-local-branch
+```
+
+如果需要在创建分支后立即切换，可以使用下面的命令
+
+```sh
+$ git checkout -b new-local-branch remote-branch
+```
