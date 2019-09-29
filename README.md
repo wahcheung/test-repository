@@ -46,7 +46,7 @@ $ git branch -d test-branch
 $ git fetch origin remote-branch:new-local-branch
 ```
 
-如果需要在创建分支后立即切换，可以使用下面的命令
+如果需要在创建分支后立即切换，可以使用下面的命令:
 
 ```sh
 $ git checkout -b new-local-branch remote-branch
@@ -55,3 +55,26 @@ $ git checkout -b new-local-branch remote-branch
 ## git merge
 
 在多人合作开发的项目中，添加功能或者修复Bug时，一般新建分支，然后在新分支上开发，开发完成后再将新功能(修复)合并到主分支，这时往往需要用到`git merge`命令。
+
+## git push
+
+### 新建远程分支
+
+根据本地master分支创建远程develop分支:
+
+```sh
+$ git push origin master:develop
+```
+
+### 删除远程分支
+
+```sh
+$ git push origin --delete develop
+```
+
+或者
+
+```sh
+$ git push origin :develop
+```
+
