@@ -51,3 +51,7 @@ $ git fetch origin remote-branch:new-local-branch
 ```sh
 $ git checkout -b new-local-branch remote-branch
 ```
+
+## git merge
+
+在多人合作开发的项目中，添加功能或者修复Bug时，一般新建分支，然后在新分支上开发，开发完成后再将新功能(修复)合并到主分支，这时往往需要用到`git merge`命令。
