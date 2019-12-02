@@ -56,6 +56,15 @@ $ git checkout -b new-local-branch remote-branch
 
 在多人合作开发的项目中，添加功能或者修复Bug时，一般新建分支，然后在新分支上开发，开发完成后再将新功能(修复)合并到主分支，这时往往需要用到`git merge`命令。
 
+### 压缩提交日志
+
+在一个新分支上开发，产生了多个commit，在将这些更改合并到主分支时，往往需要合并这些提交，这时候需要使用squash选项。
+
+```sh
+$ git merge --squash feature_branch
+$ git commit -m "your commit log info"
+```
+
 ## git push
 
 ### 新建远程分支
