@@ -78,3 +78,7 @@ $ git push origin --delete develop
 $ git push origin :develop
 ```
 
+## git rebase
+
+`git rebase`命令将提交到某一分支上的所有修改都移至另一分支上，就好像“重新播放”一样。
+
